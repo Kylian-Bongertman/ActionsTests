@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="242" failures="2" errors="0" time="38.051">
+  <testsuite name="src\pages\authentication\LogoutPage.test.tsx" errors="0" failures="1" skipped="0" timestamp="2023-11-13T15:49:25" time="9.359" tests="1">
+    <testcase classname="" name="LogoutPage" time="0.131">
+      <failure>Error: expect(received).toMatchSnapshot()
+
+Snapshot name: `LogoutPage 1`
+
+- Snapshot  - 1
++ Received  + 2
+
+@@ -37,11 +37,12 @@
+              patternUnits=&quot;userSpaceOnUse&quot;
+              width=&quot;100%&quot;
+            &gt;
+              &lt;image
+                height=&quot;125%&quot;
+-               href=&quot;blob-personen.jpg&quot;
++               href=&quot;C:UsersKylian BongertmanIdeaProjects
++ ivm-screenitscreenit-clientportaalrontendsrcscssmedialob-personen.jpg&quot;
+                width=&quot;125%&quot;
+                x=&quot;-40&quot;
+                y=&quot;-40&quot;
+              /&gt;
+            &lt;/pattern&gt;
+    at Object.toMatchSnapshot (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\screenit-clientportaal\frontend\src\pages\authentication\LogoutPage.test.tsx:36:18)
+    at Promise.then.completed (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\run.js:126:9)
+    at run (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-runner\build\testWorker.js:106:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="src\utils\DateUtil.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:24" time="9.961" tests="48">
+    <testcase classname="DateUtil" name="Berekenen van offset van datum in verleden geeft het juiste resultaat terug" time="0.029">
+    </testcase>
+    <testcase classname="DateUtil" name="Berekenen van offset van datum in toekomst geeft het juiste resultaat terug" time="0.003">
+    </testcase>
+    <testcase classname="DateUtil" name="Vandaag zonder offset geeft de juiste datum en tijd" time="0.003">
+    </testcase>
+    <testcase classname="DateUtil" name="Vandaag met offset geeft de juiste datum en tijd" time="0.002">
+    </testcase>
+    <testcase classname="DateUtil" name="Begin van dag geeft de juiste datum en tijd" time="0.003">
+    </testcase>
+    <testcase classname="DateUtil" name="Begin van dag met offset geeft de juiste datum en tijd" time="0.003">
+    </testcase>
+    <testcase classname="DateUtil" name="Bij het ontbreken van een datum komt er een lege string" time="0.001">
+    </testcase>
+    <testcase classname="DateUtil" name="Bij formatten null komt er een lege string" time="0.001">
+    </testcase>
+    <testcase classname="DateUtil" name="Een datum wordt netjes geparsed naar &apos;DD-MM-YYYY HH:mm&apos;" time="0.131">
+    </testcase>
+    <testcase classname="DateUtil" name="Een datum wordt netjes geparsed naar &apos;D MMMM YYYY&apos;" time="0.005">
+    </testcase>
+    <testcase classname="DateUtil" name="Een datum wordt netjes geparsed naar &apos;EEEE D MMMM&apos;" time="0.044">
+    </testcase>
+    <testcase classname="DateUtil" name="Toevoegen van een aantal werkdagen aan een datum" time="0.002">
+    </testcase>
+    <testcase classname="DateUtil" name="Toevoegen van 1000 werkdagen aan een datum" time="0.003">
+    </testcase>
+    <testcase classname="DateUtil" name="Toevoegen van een aantal dagen aan een datum" time="0.025">
+    </testcase>
+    <testcase classname="DateUtil" name="Toevoegen van 1000 dagen aan een datum" time="0.002">
+    </testcase>
+    <testcase classname="DateUtil" name="Toevoegen van een aantal maanden aan een datum" time="0.002">
+    </testcase>
+    <testcase classname="DateUtil" name="Toevoegen van 60 maanden aan een datum" time="0.002">
+    </testcase>
+    <testcase classname="DateUtil" name="Terugrekenen van een aantal maanden aan een datum" time="0.003">
+    </testcase>
+    <testcase classname="DateUtil" name="Terugrekenen van 60 maanden aan een datum" time="0.001">
+    </testcase>
+    <testcase classname="DateUtil" name="Bepaal de laatste datum van 2 data" time="0.002">
+    </testcase>
+    <testcase classname="DateUtil" name="Een datum voor vandaag ligt niet in de toekomst" time="0.003">
+    </testcase>
+    <testcase classname="DateUtil" name="Een datum gelijk aan vandaag ligt niet in de toekomst" time="0.001">
+    </testcase>
+    <testcase classname="DateUtil" name="Een datum na vandaag ligt in de toekomst" time="0.001">
+    </testcase>
+    <testcase classname="DateUtil" name="Een datum voor vandaag is verstreken" time="0.008">
+    </testcase>
+    <testcase classname="DateUtil" name="Een datum gelijk aan vandaag is niet verstreken" time="0.009">
+    </testcase>
+    <testcase classname="DateUtil" name="Een datum na vandaag is niet verstreken" time="0.002">
+    </testcase>
+    <testcase classname="DateUtil" name="Ondergrens van lijst wordt bepaald" time="0.002">
+    </testcase>
+    <testcase classname="DateUtil" name="Ondergrens van lijst undefined" time="0.001">
+    </testcase>
+    <testcase classname="DateUtil" name="Bovengrens van lijst wordt bepaald" time="0.001">
+    </testcase>
+    <testcase classname="DateUtil" name="Bovengrens van lijst undefined" time="0.001">
+    </testcase>
+    <testcase classname="DateUtil" name="Lijst bevat meegegeven datum" time="0.002">
+    </testcase>
+    <testcase classname="DateUtil" name="Lijst bevat niet de meegegeven datum" time="0.001">
+    </testcase>
+    <testcase classname="DateUtil" name="Lijst die undefined is geeft false terug" time="0.002">
+    </testcase>
+    <testcase classname="DateUtil" name="Index zoeken in lijst die undefined is geeft -1 terug" time="0.001">
+    </testcase>
+    <testcase classname="DateUtil" name="Index zoeken met element niet in lijst geeft -1 terug" time="0.001">
+    </testcase>
+    <testcase classname="DateUtil" name="Index zoeken met element in lijst geeft juiste index terug" time="0.002">
+    </testcase>
+    <testcase classname="DateUtil" name="Index zoeken met undefined element geeft -1 terug" time="0.001">
+    </testcase>
+    <testcase classname="DateUtil" name="Index zoeken met undefined element en lijst geeft -1 terug" time="0.001">
+    </testcase>
+    <testcase classname="DateUtil" name="Nederlandse datum geparsed naar een Date object" time="0.002">
+    </testcase>
+    <testcase classname="DateUtil" name="Nederlandse datum geparsed naar een Date object, alleen jaar bekend" time="0.001">
+    </testcase>
+    <testcase classname="DateUtil" name="Nederlandse datum geparsed naar een Date object, Alleen jaar en maand bekend" time="0.001">
+    </testcase>
+    <testcase classname="DateUtil" name="iswerkdag voor maandag 03-10-2022 moet true zijn" time="0.002">
+    </testcase>
+    <testcase classname="DateUtil" name="iswerkdag voor dinsdag 04-10-2022 moet true zijn" time="0.001">
+    </testcase>
+    <testcase classname="DateUtil" name="iswerkdag voor woensdag 05-10-2022 moet true zijn" time="0.001">
+    </testcase>
+    <testcase classname="DateUtil" name="iswerkdag voor donderdag 06-10-2022 moet true zijn" time="0.001">
+    </testcase>
+    <testcase classname="DateUtil" name="iswerkdag voor vrijdag 07-10-2022 moet true zijn" time="0.003">
+    </testcase>
+    <testcase classname="DateUtil" name="iswerkdag voor zaterdag 08-10-2022 moet false zijn" time="0.008">
+    </testcase>
+    <testcase classname="DateUtil" name="iswerkdag voor zondag 09-10-2022 moet false zijn" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\utils\UrlUtil.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:35" time="0.693" tests="6">
+    <testcase classname="Constanten" name="BvoBaseUrl wordt goed teruggegeven" time="0.005">
+    </testcase>
+    <testcase classname="Constanten" name="AfmeldenUrl wordt goed teruggegeven" time="0.001">
+    </testcase>
+    <testcase classname="Constanten" name="BezwaarUrl wordt goed teruggegeven" time="0.001">
+    </testcase>
+    <testcase classname="Constanten" name="ContactUrl wordt gemaakt" time="0.001">
+    </testcase>
+    <testcase classname="Constanten" name="ContactUrl geeft algemene contact pagina" time="0.04">
+    </testcase>
+    <testcase classname="Constanten" name="isExternalUrl controleert de external link goed" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\pages\landing\LandingPage.test.tsx" errors="0" failures="1" skipped="0" timestamp="2023-11-13T15:49:25" time="12.151" tests="8">
+    <testcase classname="" name="LandingPage" time="0.1">
+      <failure>Error: expect(received).toMatchSnapshot()
+
+Snapshot name: `LandingPage 1`
+
+- Snapshot  - 1
++ Received  + 2
+
+@@ -57,11 +57,12 @@
+              patternUnits=&quot;userSpaceOnUse&quot;
+              width=&quot;100%&quot;
+            &gt;
+              &lt;image
+                height=&quot;125%&quot;
+-               href=&quot;blob-personen.jpg&quot;
++               href=&quot;C:UsersKylian BongertmanIdeaProjects
++ ivm-screenitscreenit-clientportaalrontendsrcscssmedialob-personen.jpg&quot;
+                width=&quot;125%&quot;
+                x=&quot;-40&quot;
+                y=&quot;-40&quot;
+              /&gt;
+            &lt;/pattern&gt;
+    at Object.toMatchSnapshot (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\screenit-clientportaal\frontend\src\pages\landing\LandingPage.test.tsx:49:15)
+    at Promise.then.completed (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\run.js:126:9)
+    at run (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-runner\build\testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="" name="Persoon met geslacht onbekend aanhef" time="0.096">
+    </testcase>
+    <testcase classname="" name="Persoon met geslacht onbekend zonder voorletters aanhef" time="0.06">
+    </testcase>
+    <testcase classname="" name="Persoon met geslacht man aanhef" time="0.019">
+    </testcase>
+    <testcase classname="" name="Persoon met gekozen man aanhef" time="0.014">
+    </testcase>
+    <testcase classname="" name="Persoon met gekozen vrouw aanhef" time="0.019">
+    </testcase>
+    <testcase classname="" name="Persoon met gekozen onbekend aanhef" time="0.027">
+    </testcase>
+    <testcase classname="" name="Persoon met geslacht vrouw aanhef" time="0.02">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\pages\profiel\TijdelijkAdresWijzigenPage.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:26" time="11.697" tests="1">
+    <testcase classname="" name="Test snapshot TijdelijkAdresWijzigenPage" time="0.098">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\bvo_acties\MammaTopTakenComponent.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:25" time="13.316" tests="1">
+    <testcase classname="" name="MammaTopTakenComponent met alleen verplichte velden" time="0.118">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\pages\profiel\ProfielPage.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:25" time="13.686" tests="2">
+    <testcase classname="" name="ProfielPageInNederland" time="0.054">
+    </testcase>
+    <testcase classname="" name="ProfielPageInBuitenland" time="0.009">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\bvo_acties\BvoTakenComponent.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:37" time="2.332" tests="2">
+    <testcase classname="" name="BvoTakenComponentInNederland" time="0.042">
+    </testcase>
+    <testcase classname="" name="BvoTakenComponentInBuitenland" time="0.005">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\bvo_historie\BvoHistorieCard.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:35" time="4.128" tests="4">
+    <testcase classname="" name="BvoHistorieCard" time="0.08">
+    </testcase>
+    <testcase classname="" name="BvoHistorieCard met BK historietekst" time="0.005">
+    </testcase>
+    <testcase classname="" name="BvoHistorieCard met BMHK historietekst" time="0.006">
+    </testcase>
+    <testcase classname="" name="BvoHistorieCard met DK historietekst" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\pages\bvo\landing\BvoLandingPageController.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:25" time="14.641" tests="1">
+    <testcase classname="" name="BvoLandingPage loading" time="0.044">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\toast\DefaultToast.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:38" time="2.053" tests="1">
+    <testcase classname="" name="ScreenitTextfield met alle verplichte velden" time="0.179">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\toast\ErrorToast.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:38" time="3.133" tests="1">
+    <testcase classname="" name="Error toast met gevulde velden" time="0.051">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\bvo_acties\ColonTopTakenComponent.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:35" time="6.714" tests="4">
+    <testcase classname="" name="ColonTopTakenComponent met alle verplichte velden" time="0.08">
+    </testcase>
+    <testcase classname="" name="Colontoptaak afspraak aanmaken is zichtbaar bij geannuleerde afspraak" time="0.053">
+    </testcase>
+    <testcase classname="" name="Colontoptaak afspraak aanmaken niet zichtbaar bij geen geannuleerde afspraak" time="0.004">
+    </testcase>
+    <testcase classname="" name="Colontoptaak afspraak aanmaken zichtbaar bij afgeronde afspraak zonder conclusie met andere intakelocatie -&gt; op verzoek client als reden" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\input\ScreenitDropdown.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:24" time="17.083" tests="5">
+    <testcase classname="" name="ScreenitDropdown met verplichte velden" time="0.701">
+    </testcase>
+    <testcase classname="" name="ScreenitDropdown met className" time="0.055">
+    </testcase>
+    <testcase classname="" name="ScreenitDropdown met value" time="0.046">
+    </testcase>
+    <testcase classname="" name="ScreenitDropdown met initialValue" time="0.067">
+    </testcase>
+    <testcase classname="" name="ScreenitDropdown met invalidMessage" time="0.071">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\header\HeaderComponent.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:40" time="2.027" tests="1">
+    <testcase classname="" name="HeaderComponent" time="0.028">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\toast\ActiveToastsComponent.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:39" time="2.675" tests="3">
+    <testcase classname="" name="Active Toast Component met Info toast" time="0.137">
+    </testcase>
+    <testcase classname="" name="Active Toast Component met Warning toast" time="0.007">
+    </testcase>
+    <testcase classname="" name="Active Toast Component met Error toast" time="0.077">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\bvo_acties\CervixTopTakenComponent.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:40" time="1.965" tests="2">
+    <testcase classname="" name="CervixTopTakenComponent met beschikbare actie" time="0.025">
+    </testcase>
+    <testcase classname="" name="CervixTopTakenComponent met alle props" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\footer\FooterComponent.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:40" time="2.234" tests="1">
+    <testcase classname="" name="FooterComponent" time="0.032">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\pages\bvo\colon\ColonAfspraakAfzeggenPage.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:41" time="1.805" tests="1">
+    <testcase classname="" name="ColonAfspraakAfzeggenPage" time="0.029">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\input\ScreenitTextfield.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:42" time="1.269" tests="4">
+    <testcase classname="" name="ScreenitTextfield met alle verplichte velden" time="0.091">
+    </testcase>
+    <testcase classname="" name="ScreenitTextfield met className" time="0.004">
+    </testcase>
+    <testcase classname="" name="ScreenitTextfield met value" time="0.002">
+    </testcase>
+    <testcase classname="" name="ScreenitTextfield met invalidMessage" time="0.046">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\scss\media\icons_toptaken\AdresWijzigenIcon\HuisIcon.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:42" time="0.987" tests="2">
+    <testcase classname="AdresWijzigenIcon" name="Icon wordt correct gerendered" time="0.026">
+    </testcase>
+    <testcase classname="AdresWijzigenIcon" name="Icon met className" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\scss\media\icons_toptaken\EmailadresWijzigenIcon\EmailadresWijzigenIcon.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:42" time="1.028" tests="1">
+    <testcase classname="Email wijzigen Icon" name="Icon wordt correct gerendered" time="0.044">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\utils\DateTransformUtil.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:42" time="1.493" tests="15">
+    <testcase classname="DateTransformUtil" name="Object met UTC datum field wordt geconverteerd" time="0.008">
+    </testcase>
+    <testcase classname="DateTransformUtil" name="Nested object met UTC datum field wordt geconverteerd" time="0.001">
+    </testcase>
+    <testcase classname="DateTransformUtil" name="Array met UTC datums wordt geconverteerd" time="0.002">
+    </testcase>
+    <testcase classname="DateTransformUtil" name="Object in array met utc datum field wordt geconverteerd" time="0.001">
+    </testcase>
+    <testcase classname="DateTransformUtil" name="Null value blijft null" time="0.002">
+    </testcase>
+    <testcase classname="DateTransformUtil" name="Datum zonder tijdzone wordt niet aangepast" time="0.001">
+    </testcase>
+    <testcase classname="DateTransformUtil" name="Datum met tijdzone wordt aangepast" time="0.001">
+    </testcase>
+    <testcase classname="DateTransformUtil" name="Datum zonder uren/minuten wordt niet aangepast" time="0.001">
+    </testcase>
+    <testcase classname="DateTransformUtil" name="Datum zonder volledige tijdzone wordt niet aangepast" time="0.001">
+    </testcase>
+    <testcase classname="DateTransformUtil" name="Datum met volledige tijdzone wordt aangepast" time="0.001">
+    </testcase>
+    <testcase classname="DateTransformUtil" name="Datum met hoge precision wordt aangepast" time="0.008">
+    </testcase>
+    <testcase classname="DateTransformUtil" name="Datum met 31 uur wordt niet aangepast" time="0.001">
+    </testcase>
+    <testcase classname="DateTransformUtil" name="Datum met 21e maand wordt niet aangepast" time="0.002">
+    </testcase>
+    <testcase classname="DateTransformUtil" name="Datum met 41e dag wordt niet aangepast" time="0.001">
+    </testcase>
+    <testcase classname="DateTransformUtil" name="Datum met 80e minuut wordt niet aangepast" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\hint\HintComponent.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:42" time="1.418" tests="3">
+    <testcase classname="" name="Hint component is hidden als er geen tekst is meegegeven" time="0.084">
+    </testcase>
+    <testcase classname="" name="Hint component is visible tekst is meegegeven" time="0.005">
+    </testcase>
+    <testcase classname="" name="Hint component krijgt de custom classes" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\navigation\NavigationComponent.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:42" time="1.86" tests="2">
+    <testcase classname="testing navbar" name="Niet ingelogd" time="0.028">
+    </testcase>
+    <testcase classname="testing navbar" name="Wel ingelogd" time="0.022">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\pages\ActieBasePage.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:41" time="2.262" tests="5">
+    <testcase classname="" name="ActieBasePage met verplichte velden" time="0.063">
+    </testcase>
+    <testcase classname="" name="ActieBasePage met description" time="0.005">
+    </testcase>
+    <testcase classname="" name="ActieBasePage className" time="0.003">
+    </testcase>
+    <testcase classname="" name="ActieBasePage met hint in het begin" time="0.003">
+    </testcase>
+    <testcase classname="" name="ActieBasePage met hint aan het einde" time="0.016">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\validators\AdresValidator.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:43" time="0.812" tests="29">
+    <testcase classname="Adres validatie testen" name="Huisnummer validatie met cijfer" time="0.005">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Huisnummer validatie met 3 cijfers" time="0.001">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Huisnummer validatie met letter" time="0.001">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Huisnummer validatie met spatie" time="0.001">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Huisnummer validatie met cijfer na spatie" time="0.001">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Huisnummer validatie met spatie na cijfer" time="0.001">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Huisletter validatie met letter" time="0.001">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Huisletter validatie met twee letters" time="0.001">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Huisletter validatie met cijfer" time="0.001">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Huisletter validatie met spatie" time="0.001">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Huisletter validatie met letter na spatie" time="0.001">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Huisletter validatie met spatie na letter" time="0.001">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Postcode exact validatie met juiste postcode" time="0.001">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Postcode exact validatie met juiste postcode met kleine letters" time="0.002">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Postcode exact validatie met spatie in postcode" time="0.001">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Postcode exact validatie met alleen cijfers" time="0.002">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Postcode exact validatie met spatie na postcode" time="0">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Postcode exact validatie met spatie voor juiste postcode" time="0">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Postcode exact validatie met teveel letters" time="0.001">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Postcode exact validatie met teveel cijfers" time="0">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Postcode exact validatie met onjuiste combinatie letters" time="0">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Postcode search validatie met juiste postcode" time="0.004">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Postcode search validatie met kleine letters" time="0.001">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Postcode search validatie met spatie in postcode" time="0">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Postcode search validatie met alleen cijfers" time="0.001">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Postcode search validatie met spatie voor juiste postcode" time="0">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Postcode search validatie met spatie na juiste postcode" time="0.001">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Postcode search validatie met onjuiste postcode" time="0.001">
+    </testcase>
+    <testcase classname="Adres validatie testen" name="Postcode search validatie met onjuiste postcode" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\scss\media\icons_toptaken\HuisartsIcon\HuisartsIcon.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:43" time="0.889" tests="1">
+    <testcase classname="Huisarts Icon" name="Icon wordt correct gerendered" time="0.057">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\blob\BlobComponent.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:43" time="0.952" tests="1">
+    <testcase classname="" name="BlobComponent" time="0.077">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\blob\BvoLandingBlobComponent.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:43" time="0.869" tests="1">
+    <testcase classname="" name="BvoLandingBlobComponent met huidige afspraak" time="0.087">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\popup\BasePopup.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:43" time="1.098" tests="1">
+    <testcase classname="" name="BasePopup" time="0.115">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\bvo_inleiding\InleidingComponent.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:43" time="1.621" tests="1">
+    <testcase classname="" name="InleidingComponent" time="0.104">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\scss\media\icons_toptaken\AfspraakIcon\AfspraakIcon.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:43" time="1.022" tests="1">
+    <testcase classname="Afspraak Icon" name="Icon wordt correct gerendered" time="0.054">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\scss\media\icons_toptaken\AfmeldenOnderzoekIcon\AfmeldenOnderzoekIcon.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:44" time="1.148" tests="1">
+    <testcase classname="Afmelden onderzoek Icon" name="Icon wordt correct gerendered" time="0.039">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\taken\TaakComponent.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:44" time="1.342" tests="2">
+    <testcase classname="" name="TaakComponent met verplichte velden" time="0.023">
+    </testcase>
+    <testcase classname="" name="TaakComponent incl icon" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\scss\media\icons_toptaken\UitstellenIcon\UitstellenIcon.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:44" time="1.189" tests="1">
+    <testcase classname="Uitstellen Icon" name="Icon wordt correct gerendered" time="0.045">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\validators\EmailValidator.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:44" time="1.076" tests="4">
+    <testcase classname="Email validatie testen" name="email goed gevalideerd" time="0.011">
+    </testcase>
+    <testcase classname="Email validatie testen" name="Lege email validatie" time="0.001">
+    </testcase>
+    <testcase classname="Email validatie testen" name="Email geen @" time="0.008">
+    </testcase>
+    <testcase classname="Email validatie testen" name="Email geen domein" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\scss\media\icons_toptaken\HerdrukkenIcon\HerdrukkenIcon.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:44" time="1.067" tests="1">
+    <testcase classname="Herdrukken Icon" name="Icon wordt correct gerendered" time="0.048">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\reducers\ToastsReducer.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:45" time="1.051" tests="12">
+    <testcase classname="Toast Reducer test" name="Nieuwe toast wordt toegevoegd aan leeg lijsje" time="0.004">
+    </testcase>
+    <testcase classname="Toast Reducer test" name="Nieuwe toast wordt toegevoegd aan gevuld lijsje" time="0.003">
+    </testcase>
+    <testcase classname="Toast Reducer test" name="Exact toast wordt niet opnieuw toegevoegd" time="0.001">
+    </testcase>
+    <testcase classname="Toast Reducer test" name="Toast met enkel andere title wordt wel toegevoegd" time="0.001">
+    </testcase>
+    <testcase classname="Toast Reducer test" name="Toast met enkel andere description wordt wel toegevoegd" time="0.002">
+    </testcase>
+    <testcase classname="Toast Reducer test" name="Toast met enkel ander type wordt wel toegevoegd" time="0.002">
+    </testcase>
+    <testcase classname="Toast Reducer test" name="Toast wordt netjes verwijderd" time="0.001">
+    </testcase>
+    <testcase classname="Toast Reducer test" name="Toast buiten index wordt niet verwijderd" time="0.001">
+    </testcase>
+    <testcase classname="Toast Reducer test" name="Toast al getoond wordt op true gezet bij eerste keer aanroepen createHideAllToastsActions" time="0.001">
+    </testcase>
+    <testcase classname="Toast Reducer test" name="Toast wordt verwijderd bij createHideAllToastsActions bij twee keer" time="0">
+    </testcase>
+    <testcase classname="Toast Reducer test" name="Meerdere Toasts al getoond worden op true gezet bij eerste keer aanroepen createHideAllToastsActions" time="0.001">
+    </testcase>
+    <testcase classname="Toast Reducer test" name="Meerdere Toasts worden verwijderd bij createHideAllToastsActions bij twee keer" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\blob\ImageBlobComponent.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:45" time="1.206" tests="2">
+    <testcase classname="" name="ImageBlobComponent met image gedefinieerd" time="0.022">
+    </testcase>
+    <testcase classname="" name="ImageBlobComponent met image gedefinieerd incl className" time="0.009">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\error_boundary\ErrorBoundary.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:25" time="20.851" tests="3">
+    <testcase classname="" name="Typescript error unsupported browser laat errorBoundary zien" time="1.085">
+    </testcase>
+    <testcase classname="" name="Geen typescript error laat geen errorBoundary zien" time="0.005">
+    </testcase>
+    <testcase classname="" name="Typescript error supported browser laat errorBoundary zien " time="0.195">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\scss\media\icons_toptaken\BezwaarMakenIcon\BezwaarMakenIcon.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:45" time="1.347" tests="1">
+    <testcase classname="Bezwaar maken Icon" name="Icon wordt correct gerendered" time="0.093">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\scss\media\icons_toptaken\AanspreekVormIcon\AanspreekVormIcon.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:45" time="1.613" tests="2">
+    <testcase classname="AanspreekVormIcon" name="Icon wordt correct gerendered" time="0.061">
+    </testcase>
+    <testcase classname="AanspreekVormIcon" name="Icon met className" time="0.008">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\banner\unsupportedbrowser\UnsupportedBrowserBanner.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:26" time="20.702" tests="2">
+    <testcase classname="" name="Supported browser geeft geen banner terug" time="0.22">
+    </testcase>
+    <testcase classname="" name="UnSupported browser geeft banner terug" time="0.759">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\validators\TelefoonnummerValidator.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:45" time="1.535" tests="26">
+    <testcase classname="Telefoonnummer validatie testen" name="Vast nummer goed gevalideerd" time="0.047">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Vast nummer goed gevalideerd met -" time="0.001">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Vast nummer goed gevalideerd met spatie" time="0.001">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Vast nummer onjuist met spaties" time="0.002">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Vast nummer onjuist teveel cijfers" time="0.004">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Vast nummer onjuist te weinig cijfers" time="0.001">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Vast nummer onjuist door spatie" time="0">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Mobiel nummer goed gevalideerd" time="0.001">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Mobiel nummer goed gevalideerd met -" time="0.001">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Mobiel nummer goed gevalideerd met spatie" time="0.003">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Mobiel nummer onjuist met spaties" time="0.06">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Mobiel nummer onjuist teveel cijfers" time="0.001">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Mobiel nummer onjuist te weinig cijfers" time="0.001">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Mobiel nummer onjuist door spatie" time="0.001">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Info nummer met 08 goed gevalideerd" time="0.001">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Info nummer met 09 goed gevalideerd" time="0.001">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Info nummer goed gevalideerd met -" time="0">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Info nummer goed gevalideerd met spatie" time="0.001">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Info nummer met teveel spaties" time="0">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Info nummer met teveel cijfers" time="0">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Info nummer met te weinig cijfers" time="0.001">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Info nummer onjuist door spatie" time="0">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Buitenlands nummer goed gevalideerd" time="0.001">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Lang buitenlands nummer" time="0">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Buitenlands nummer te lang" time="0">
+    </testcase>
+    <testcase classname="Telefoonnummer validatie testen" name="Buitenlands nummer goed gevalideerd met -" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\bigUrlButton\BigUrlButton.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:45" time="1.253" tests="1">
+    <testcase classname="" name="BigUrlButton met alle props" time="0.076">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\scss\media\icons_toptaken\TelefoonnummerWijzigenIcon\TelefoonnummerWijzigenIcon.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:45" time="1.348" tests="1">
+    <testcase classname="Telefoonnummer wijzigen Icon" name="Icon wordt correct gerendered" time="0.06">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\scss\media\icons_toptaken\HeraanmeldenIcon\HeraanmeldenIcon.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:46" time="1.038" tests="1">
+    <testcase classname="Heraanmelden Icon" name="Icon wordt correct gerendered" time="0.055">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\utils\StringUtil.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:46" time="0.821" tests="2">
+    <testcase classname="" name="Non breaking space wordt geplaatst" time="0.004">
+    </testcase>
+    <testcase classname="" name="Adres string wordt gesplitst" time="0.047">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\taken\TopTaakComponent.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:46" time="1.107" tests="3">
+    <testcase classname="" name="TopTaakComponent met verplichte velden" time="0.04">
+    </testcase>
+    <testcase classname="" name="TopTaakComponent met subtitel" time="0.005">
+    </testcase>
+    <testcase classname="" name="TopTaakComponent met subtekst" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\utils\RegexUtil.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:46" time="0.709" tests="2">
+    <testcase classname="Regex util testen" name="Regex util matched waarde goed met regex" time="0.005">
+    </testcase>
+    <testcase classname="Regex util testen" name="Regex util herkent dat waarde niet gelijk is aan regex" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\reducers\SpinnerCounterReducer.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:46" time="0.74" tests="2">
+    <testcase classname="Spinner counter Reducer test" name="Request wordt goed geregistreerd" time="0.005">
+    </testcase>
+    <testcase classname="Spinner counter Reducer test" name="Respons wordt goed geregistreerd" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\scss\media\icons_toptaken\ZasAanvragenIcon\ZasAanvragenIcon.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:46" time="1.211" tests="1">
+    <testcase classname="Zas Aanvragen Icon" name="Icon wordt correct gerendered" time="0.044">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\scss\media\icons_toptaken\FitAanvragenIcon\FitAanvragenIcon.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:46" time="0.976" tests="1">
+    <testcase classname="Fit aanvragen Icon" name="Icon wordt correct gerendered" time="0.053">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\input\ScreenitDatePicker.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-13T15:49:25" time="29.87" tests="11">
+    <testcase classname="" name="shouldDisableDate met null datum" time="0.03">
+    </testcase>
+    <testcase classname="" name="shouldDisableDate met beschikbare datum" time="0.002">
+    </testcase>
+    <testcase classname="" name="shouldDisableDate met niet beschikbare datum binnen range" time="0.002">
+    </testcase>
+    <testcase classname="" name="shouldDisableDate met niet beschikbare datum buiten range" time="0.002">
+    </testcase>
+    <testcase classname="" name="Datepicker met alle verplichte velden" time="0.227">
+    </testcase>
+    <testcase classname="" name="Datepicker met className" time="0.125">
+    </testcase>
+    <testcase classname="" name="Datepicker met titel" time="0.025">
+    </testcase>
+    <testcase classname="" name="Datepicker met errorLabel" time="0.034">
+    </testcase>
+    <testcase classname="" name="Datepicker met value" time="0.051">
+    </testcase>
+    <testcase classname="" name="Datepicker met beschikbare dagen" time="0.051">
+    </testcase>
+    <testcase classname="" name="Datepicker met een lege lijst met beschikbare dagen" time="0.03">
+    </testcase>
+  </testsuite>
+</testsuites>

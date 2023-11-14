@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="70" failures="1" errors="0" time="4.343">
+  <testsuite name="src\validation\GeboortedatumValidator.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-11-14T09:54:49" time="1.355" tests="7">
+    <testcase classname="Test geboortedatum validator" name="Test validator met correct geboortedatum" time="0.037">
+    </testcase>
+    <testcase classname="Test geboortedatum validator" name="Test validator met geboortedatum na dag vandaag" time="0.002">
+    </testcase>
+    <testcase classname="Test geboortedatum validator" name="Test validator zonder input" time="0.001">
+    </testcase>
+    <testcase classname="Test geboortedatum validator" name="Test validator met verkeerd datumformaat" time="0.001">
+    </testcase>
+    <testcase classname="Test geboortedatum validator" name="Test validator met geen datum" time="0.001">
+    </testcase>
+    <testcase classname="Test geboortedatum validator" name="Test validator met datum 100 jaar geleden - 1 dag" time="0.002">
+    </testcase>
+    <testcase classname="Test geboortedatum validator" name="Test validator met datum meer dan 100 jaar geleden" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\selectors\OnderzoekSelector.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-11-14T09:54:49" time="1.352" tests="4">
+    <testcase classname="Onderzoek selector tests" name="Test afspraak heeft onderzoek met juiste status" time="0.014">
+    </testcase>
+    <testcase classname="Onderzoek selector tests" name="Test afspraak heeft onderzoek met incorrecte status" time="0.001">
+    </testcase>
+    <testcase classname="Onderzoek selector tests" name="Test afspraak heeft onderzoek met lege onderzoekreducer" time="0.001">
+    </testcase>
+    <testcase classname="Onderzoek selector tests" name="Test afspraak heeft geen onderzoek" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\validation\TelefoonnummerValidator.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-11-14T09:54:49" time="1.362" tests="16">
+    <testcase classname="Test telefoonnummer validor" name="Test valide mobielnummer 06" time="0.014">
+    </testcase>
+    <testcase classname="Test telefoonnummer validor" name="Test valide mobielnummer +31" time="0.001">
+    </testcase>
+    <testcase classname="Test telefoonnummer validor" name="Test valide mobielnummer 0031" time="0.001">
+    </testcase>
+    <testcase classname="Test telefoonnummer validor" name="Test niet valide mobielnummer " time="0.001">
+    </testcase>
+    <testcase classname="Test telefoonnummer validor" name="Test valide vast nummer 0570" time="0.001">
+    </testcase>
+    <testcase classname="Test telefoonnummer validor" name="Test valide vast nummer 0570-" time="0.001">
+    </testcase>
+    <testcase classname="Test telefoonnummer validor" name="Test valide vast nummer 040" time="0.001">
+    </testcase>
+    <testcase classname="Test telefoonnummer validor" name="Test valide vast nummer 040-" time="0.001">
+    </testcase>
+    <testcase classname="Test telefoonnummer validor" name="Test niet valide vast nummer" time="0.001">
+    </testcase>
+    <testcase classname="Test telefoonnummer validor" name="Test valide informatienummer 0900" time="0.001">
+    </testcase>
+    <testcase classname="Test telefoonnummer validor" name="Test valide informatienummer 0900 " time="0.001">
+    </testcase>
+    <testcase classname="Test telefoonnummer validor" name="Test valide informatienummer 0900-" time="0.001">
+    </testcase>
+    <testcase classname="Test telefoonnummer validor" name="Test valide informatienummer 0800" time="0.001">
+    </testcase>
+    <testcase classname="Test telefoonnummer validor" name="Test valide informatienummer 0800 " time="0.001">
+    </testcase>
+    <testcase classname="Test telefoonnummer validor" name="Test valide informatienummer 0800-" time="0.001">
+    </testcase>
+    <testcase classname="Test telefoonnummer validor" name="Test leeg telefoonnummer" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\validation\IdentificatieValidator.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-11-14T09:54:49" time="1.375" tests="9">
+    <testcase classname="Test identificatie validator" name="Test valide paspoort" time="0.014">
+    </testcase>
+    <testcase classname="Test identificatie validator" name="Test niet valide paspoort" time="0.001">
+    </testcase>
+    <testcase classname="Test identificatie validator" name="Test valide IDKaart" time="0.001">
+    </testcase>
+    <testcase classname="Test identificatie validator" name="Test niet valide IDKaart" time="0.004">
+    </testcase>
+    <testcase classname="Test identificatie validator" name="Test valide rijbewijs" time="0.001">
+    </testcase>
+    <testcase classname="Test identificatie validator" name="Test niet valide rijbewijs" time="0.001">
+    </testcase>
+    <testcase classname="Test identificatie validator" name="Test overige identificatiesoort" time="0.001">
+    </testcase>
+    <testcase classname="Test identificatie validator" name="Validator zonder waarde" time="0.001">
+    </testcase>
+    <testcase classname="Test identificatie validator" name="Object zonder identificatiesoort" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\validation\EmailValidator.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-11-14T09:54:49" time="1.335" tests="12">
+    <testcase classname="E-mailvalidator test" name="Validatie met correct e-mailadres" time="0.013">
+    </testcase>
+    <testcase classname="E-mailvalidator test" name="Validatie zonder e-mailadres" time="0.002">
+    </testcase>
+    <testcase classname="E-mailvalidator test" name="Validatie email zonder domein" time="0.001">
+    </testcase>
+    <testcase classname="E-mailvalidator test" name="Validatie email zonder @" time="0.001">
+    </testcase>
+    <testcase classname="E-mailvalidator test" name="Validatie email zonder eerste naam" time="0.001">
+    </testcase>
+    <testcase classname="E-mailvalidator test" name="Validatie email met foutieve landcode" time="0.001">
+    </testcase>
+    <testcase classname="E-mailvalidator test › Emailvalidatortest maar dan geparameteriseerd" name="Check op emailadres: &quot;mail@mail.nl&quot;, verwacht validatie resultaat: true" time="0">
+    </testcase>
+    <testcase classname="E-mailvalidator test › Emailvalidatortest maar dan geparameteriseerd" name="Check op emailadres: undefined, verwacht validatie resultaat: true" time="0">
+    </testcase>
+    <testcase classname="E-mailvalidator test › Emailvalidatortest maar dan geparameteriseerd" name="Check op emailadres: &quot;mail@mail&quot;, verwacht validatie resultaat: false" time="0.001">
+    </testcase>
+    <testcase classname="E-mailvalidator test › Emailvalidatortest maar dan geparameteriseerd" name="Check op emailadres: &quot;mail.nl&quot;, verwacht validatie resultaat: false" time="0.001">
+    </testcase>
+    <testcase classname="E-mailvalidator test › Emailvalidatortest maar dan geparameteriseerd" name="Check op emailadres: &quot;@mail.nl&quot;, verwacht validatie resultaat: false" time="0.001">
+    </testcase>
+    <testcase classname="E-mailvalidator test › Emailvalidatortest maar dan geparameteriseerd" name="Check op emailadres: &quot;mail@mail.n&quot;, verwacht validatie resultaat: false" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\validation\DubbeleTijdRedenValidator.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-11-14T09:54:49" time="1.327" tests="5">
+    <testcase classname="Dubbele tijd reden validator test" name="Validatie geldige dubbele tijd" time="0.012">
+    </testcase>
+    <testcase classname="Dubbele tijd reden validator test" name="Validatie dubbele tijd zonder reden" time="0">
+    </testcase>
+    <testcase classname="Dubbele tijd reden validator test" name="Validatie dubbele tijd met reden zonder dubbele tijd" time="0.001">
+    </testcase>
+    <testcase classname="Dubbele tijd reden validator test" name="Validator krijgt undefined mee" time="0.001">
+    </testcase>
+    <testcase classname="Dubbele tijd reden validator test" name="Validator geeft juiste errormessage" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\validation\BSNValidator.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-11-14T09:54:49" time="1.331" tests="4">
+    <testcase classname="BSN Validator testen" name="Valide BSN" time="0.013">
+    </testcase>
+    <testcase classname="BSN Validator testen" name="Niet valide BSN" time="0.001">
+    </testcase>
+    <testcase classname="BSN Validator testen" name="Geen gevulde BSN" time="0.001">
+    </testcase>
+    <testcase classname="BSN Validator testen" name="Foutbericht bij niet valide BSN" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\selectors\AfspraakSelectors.test.ts" errors="0" failures="1" skipped="0" timestamp="2023-11-14T09:54:49" time="1.428" tests="8">
+    <testcase classname="Afspraak selector tests" name="Aantal afspraken ophalen van huidige dag met afspraken zonder beeindigde afspraak" time="0.014">
+    </testcase>
+    <testcase classname="Afspraak selector tests" name="Aantal afspraken ophalen van huidige dag met afspraken met beeindigde afspraak" time="0.001">
+    </testcase>
+    <testcase classname="Afspraak selector tests" name="Ophalen van afspraken van huidige dag" time="0.002">
+    </testcase>
+    <testcase classname="Afspraak selector tests" name="Ophalen van afspraken statussen die niet beeindigd zijn" time="0.002">
+    </testcase>
+    <testcase classname="Afspraak selector tests" name="Ophalen afgerond op dag uit dagverslag" time="0.002">
+    </testcase>
+    <testcase classname="Afspraak selector tests" name="Ophalen informatie uit dagverslag indien er geen afspraken zijn" time="0.002">
+    </testcase>
+    <testcase classname="Afspraak selector tests" name="Geen dagverslag en geen afspraken geven standaard 0 terug bij alle resultaten" time="0.005">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 123456
+Received: 0
+    at Object.toBe (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\screenit-se\se-proxy\webapp\src\selectors\AfspraakSelectors.test.ts:166:26)
+    at Promise.then.completed (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\run.js:121:9)
+    at run (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (C:\Users\Kylian Bongertman\IdeaProjects\rivm-screenit\node_modules\jest-runner\build\testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="Afspraak selector tests" name="Ophalen beeindigde afspraken met onderzoekstatussen." time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\daglijst\PassantAfspraakMakenView.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-14T09:54:49" time="2.404" tests="2">
+    <testcase classname="Test voor passant afspraak maken" name="Basic snapshot test datum niet vandaag" time="0.018">
+    </testcase>
+    <testcase classname="Test voor passant afspraak maken" name="Basic snapshot test datum vandaag" time="0.082">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\components\daglijst\AfspraakOverzichtView.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-11-14T09:54:49" time="2.664" tests="3">
+    <testcase classname="Test voor afspraak overzicht" name="Leeg afspraak overzicht snapshot test" time="0.067">
+    </testcase>
+    <testcase classname="Test voor afspraak overzicht" name="overzicht met afspraken snapshot test" time="0.004">
+    </testcase>
+    <testcase classname="Test voor afspraak overzicht" name="overzicht met afspraken snapshot test" time="0.004">
+    </testcase>
+  </testsuite>
+</testsuites>

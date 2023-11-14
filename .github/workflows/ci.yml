@@ -11,8 +11,7 @@ jobs:
       if: success() || failure()              # Run deze stap ook als voorgaande stap faalt
       with:
         name: JEST Tests                      # Naam van de stap in GitHub Actions waaronder het rapport wordt gegenereerd
-        path:                                # Path naar test resultaten
-          'andere-test-results\jest-results.xml'
+        path: 'andere-test-results\jest-results.xml'
         reporter: jest-junit                  # Format van test resultaten
         fail-on-empty: 'false'                # Bij false: Geef groen licht en ga door met de build, ook als er geen testen gevonden zijn
         fail-on-error: 'true'                 # Bij false: Geef groen licht en ga door met de build, ook als testen falen

@@ -6,16 +6,15 @@ on:
       - 'master'
 jobs:
   kylian-test:
-
-      - name: Test Report Angular
-        uses: dorny/test-reporter@v1
-        if: success() || failure()              # Run deze stap ook als voorgaande stap faalt
-        with:
-          name: Unit tests check run            # Naam van de stap in GitHub Actions waaronder het rapport wordt gegenereerd
-          path: 'andere-test-results/jest-results.xml'     # Path naar test resultaten
-          reporter: java-junit                  # Format van test resultaten
-          fail-on-empty: 'false'                # Bij false: Geef groen licht en ga door met de build, ook als er geen testen gevonden zijn
-          fail-on-error: 'true'                 # Bij false: Geef groen licht en ga door met de build, ook als testen falen
+    - name: Test Report Angular
+      uses: dorny/test-reporter@v1
+      if: success() || failure()              # Run deze stap ook als voorgaande stap faalt
+      with:
+        name: Unit tests check run            # Naam van de stap in GitHub Actions waaronder het rapport wordt gegenereerd
+        path: 'andere-test-results/jest-results.xml'     # Path naar test resultaten
+        reporter: java-junit                  # Format van test resultaten
+        fail-on-empty: 'false'                # Bij false: Geef groen licht en ga door met de build, ook als er geen testen gevonden zijn
+        fail-on-error: 'true'                 # Bij false: Geef groen licht en ga door met de build, ook als testen falen
 
     # - name: Test Report React
     #   uses: dorny/test-reporter@v1

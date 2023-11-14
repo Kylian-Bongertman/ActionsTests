@@ -4,14 +4,20 @@ on:
   push:
     branches:
       - 'master'
+
 jobs:
   kylian-test:
-    - name: Test Report React
-      uses: dorny/test-reporter@v1
-      if: success() || failure()              # Run deze stap ook als voorgaande stap faalt
-      with:
-        name: JEST Tests                      # Naam van de stap in GitHub Actions waaronder het rapport wordt gegenereerd
-        path: '**jest-results.xml'
-        reporter: jest-junit                  # Format van test resultaten
-        fail-on-empty: 'false'                # Bij false: Geef groen licht en ga door met de build, ook als er geen testen gevonden zijn
-        fail-on-error: 'true'                 # Bij false: Geef groen licht en ga door met de build, ook als testen falen
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Test Report React
+        uses: dorny/test-reporter@v1
+        if: success() || failure()
+        with:
+          name: JEST Tests
+          path: '**jest-results.xml'
+          reporter: jest-junit
+          fail-on-empty: 'false'
+          fail-on-error: 'true'
